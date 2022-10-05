@@ -1,0 +1,137 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    background-color: maroon;
+    font-size: 23px;
+}
+.nav ul{
+display:flex;
+}
+.nav ul li{
+    list-style: none;
+
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: beige;
+    cursor: pointer;
+    margin: 0px 15px;
+   
+}
+.nav ul li :hover{
+    transition: 0.5s;
+    background-color: beige;
+    color: maroon;
+    border-left: 10px solid beige;
+    border-right: 10px solid beige;  
+}
+.search{
+    width: 180px;
+    padding-bottom: 15px;
+}
+.recherche{
+    padding-bottom: 22px;
+}
+.titre{
+    color: beige;
+    font-style: italic;
+    font-size:20px;
+}
+.principale{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+}
+.droite{
+    background-color: beige;
+    border-radius: 10px;
+    height: 550px;
+    width: 1000px;
+    margin: 10px;
+}
+.gauche{
+    background-color: maroon;
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 30px;    
+}
+
+.gauche ul li{
+        list-style: none;
+        padding: 10px; 
+}
+.gauche ul li a{
+        text-decoration: none;
+        color: beige;
+        cursor: pointer;
+
+}
+.gauche ul li :hover{
+        transition: 0.5s;
+        background-color: beige;
+        color: maroon;
+          
+}
+.bienvenue{
+    font-size: 35px;
+    color: maroon;
+}
+.intro{
+    text-align: center;
+}
+.ad{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.sal-emp{
+    display: none;
+}
+.aff_ins, .aff_admin, .aff_cour, .aff_note, .aff_camps, .cham_ti, .chambre{
+    display: none;
+}
+.btn_ad{
+    width: 150px;
+    height: 50px;
+    color: beige;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: maroon;
+}
+.aff_admin{
+
+    justify-content: space-around;
+}
+.inp_ins{
+    height: 40px;
+    width: 250px;
+    font-size: 16px;
+} 
+.titres{
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    color: maroon;
+}
+.inp_ins:hover{
+    background-color: rgb(165, 35, 35);
+    color: beige;
+}
+.inscription{
+
+    justify-content: space-around;
+}
+.btn_ins{
+    height: 60px;
+    width: 180px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn_ins:hover{
+    background-color: maroon;
+    color: beige;
+}
+
