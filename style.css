@@ -93,7 +93,7 @@ display:flex;
 .aff_ins, .aff_admin, .aff_cour, .aff_note, .aff_camps, .cham_ti, .chambre{
     display: none;
 }
-.btn_ad{
+.btn_ad1, .btn_ad2, .btn_ad3{
     width: 150px;
     height: 50px;
     color: beige;
@@ -104,6 +104,10 @@ display:flex;
 .aff_admin{
 
     justify-content: space-around;
+}
+.form{
+    display: none;
+    padding-left: 60px;
 }
 .inp_ins{
     height: 40px;
@@ -134,4 +138,20 @@ display:flex;
     background-color: maroon;
     color: beige;
 }
-
+.globale{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 40px;
+}
+.glo{
+    background-color: maroon;
+    color: beige;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+}
+p a {
+  text-decoration: none;
+  color: beige;
+}

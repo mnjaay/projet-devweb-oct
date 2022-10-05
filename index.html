@@ -76,6 +76,27 @@
                     Si vous vous rendez compte qu'une UE manque ou qu'on vous a inscrit à une UE par erreur, merci de contacter le service pédagogique de votre établissement</p>
                 
                   </strong>  
+                  <div class="globale">
+                    <div class="glo">
+                        <p >UEs Inscrit</p><br>
+                        <p>10</p>
+                    </div>
+                    <div class="glo">
+                        <p >Nombre d'Absence</p><br>
+                        <p>0</p>
+                    </div>
+                    <div class="glo">
+                        <p>Moyenne Semestrielle</p><br>
+                        <p>Neant</p>
+                    </div>
+                    <div class="glo">
+                        <p >Mes Notes </p>
+                        <p><a href="#"> Cliquez ici pour voir</a></p>
+                    </div>
+                    <div>
+
+                    </div>
+                  </div>
             </div>
             <div class="aff_camps">
                 <p class="titres">CAMPUS SOCIAL</p>
@@ -137,10 +158,21 @@
             <div class="aff_admin">
                 <p class="titres">ADMINISTRATION</p>
                 <div class="ad">
-                    <button class="btn_ad">Retrait Releve de Note</button>
-                    <button class="btn_ad">Retrait d'Attestation</button>
-                    <button class="btn_ad">Retrait de Diplome</button>
+                    <button class="btn_ad1">Retrait Releve de Note</button>
+                    <button class="btn_ad2">Retrait d'Attestation</button>
+                    <button class="btn_ad3">Retrait de Diplome</button>
     
+                </div>
+                <div class="form">
+                    <label for="">NOM</label><br>
+                    <input type="text" placeholder="NOM..." class="inp_ins"><br><br>
+                    <label for="">PRENOM</label><br>
+                    <input type="text" placeholder="PRENOM..." class="inp_ins"><br><br>
+                    <label for="">NUMREO DE DOSSIER</label><br>
+                    <input type="text" placeholder= "1234567890..." class="inp_ins"><br><br>
+                    <label for="">OBJET DE RETRAIT</label><br>
+                    <input type="text" class="inp_ins"><br><br>
+                    <button class="btn_ins">SOUMETTRE</button>
                 </div>
          
             </div>
@@ -228,17 +260,40 @@
         const chambre=document.querySelector(".chambre");
         const chamb=document.querySelector(".chamb");
         const tiq=document.querySelector(".tiq");
+        const btn_ad1=document.querySelector(".btn_ad1");
+        const btn_ad2=document.querySelector(".btn_ad2");
+        const btn_ad3=document.querySelector(".btn_ad3");
+        const ad=document.querySelector(".ad");
 
         const aff_ins=document.querySelector(".aff_ins");
         const aff_admin=document.querySelector(".aff_admin");
         const aff_camps=document.querySelector(".aff_camps");
         const aff_cour=document.querySelector(".aff_cour");
         const aff_note=document.querySelector(".aff_note");
+        const form=document.querySelector(".form");
+
+        btn_ad1.addEventListener("click",affiche_form);
+        btn_ad2.addEventListener("click",affiche_form);
+        btn_ad3.addEventListener("click",affiche_form);
         
+        function affiche_form(){
+            aff_ins.style.display='none';
+            intro.style.display='none';
+            sal_emp.style.display='none';
+            aff_admin.style.display='initial';
+            aff_camps.style.display='none';
+            aff_cour.style.display='none';
+            aff_note.style.display='none';
+            cham_ti.style.display='none';
+            chambre.style.display='none';
+            ad.style.display='none';
+            form.style.display='initial';
+
+        }   
         ins.addEventListener("click",affiche_ins);
         function affiche_ins(){
             aff_ins.style.display='initial';
-            inscription.style.display="flex";
+            inscription.style.display='flex';
             intro.style.display='none';
             sal_emp.style.display='none';
             aff_admin.style.display='none';
@@ -246,8 +301,10 @@
             aff_cour.style.display='none';
             aff_note.style.display='none';
             cham_ti.style.display='none';
+            chambre.style.display='none';
 
         }
+    
         chamb.addEventListener("click",affiche_chambre);
         function affiche_chambre(){
             aff_ins.style.display='none';
@@ -311,8 +368,7 @@
             aff_camps.style.display='none';
             aff_cour.style.display='initial';
             aff_note.style.display='none';
-            cham_ti.style.display='none'; 
-        }
+            cham_ti.style.display='none';         }
 
         cour.addEventListener("click",aff_salle);
 
